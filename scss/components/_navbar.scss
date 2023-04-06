@@ -1,0 +1,110 @@
+nav {
+  position: absolute;
+  width: 100%;
+
+  .navbar {
+    max-width: 140rem;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    @include respond(laptop-medium) {
+      padding: 2rem 3rem;
+    }
+
+    @include respond(phone-large) {
+      flex-direction: row-reverse;
+      align-items: start;
+      background-color: rgba(34, 34, 34, 0.6);
+      border-bottom: 1px solid $third-color;
+      padding: 2rem 4rem;
+    }
+
+    &__logo {
+      &--desktop {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $light-color;
+
+        @include respond(tablet) {
+          display: none;
+        }
+      }
+
+      &--mobile {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: $light-color;
+        display: none;
+
+        @include respond(tablet) {
+          display: block;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &__hamburger {
+        font-size: 2.5rem;
+        display: none;
+        color: $light-color;
+
+        @include respond(phone-large) {
+          display: block;
+        }
+      }
+
+      &__checkbox {
+        display: none;
+      }
+
+      &__lists {
+        list-style-type: none;
+        display: flex;
+        gap: 8rem;
+
+        @include respond(laptop-medium) {
+          gap: 6rem;
+        }
+
+        @include respond(laptop-small) {
+          gap: 5rem;
+        }
+
+        @include respond(phone-large) {
+          display: none;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        &--item {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 2.2rem;
+
+          &:link,
+          &:visited {
+            color: $light-color;
+          }
+
+          &:hover,
+          &:active {
+            text-decoration: line-through $third-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+#toggle:checked + .links__lists {
+  display: flex;
+}

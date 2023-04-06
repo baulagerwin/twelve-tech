@@ -1,0 +1,146 @@
+.u__animation--first {
+  animation: moveToRight 0.1s linear;
+  animation-fill-mode: forwards;
+}
+
+.u__animation--second {
+  animation: moveToRight 0.2s linear;
+  @include respond(phone-large) {
+    animation: none;
+  }
+}
+
+.u__animation--third {
+  animation: moveToRight 0.3s linear;
+  @include respond(phone-large) {
+    animation: none;
+  }
+}
+
+.u__animation--fourth {
+  animation: moveToRight 0.4s linear;
+  @include respond(phone-large) {
+    animation: none;
+  }
+}
+
+.u__animation--fifth {
+  animation: moveToRight 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.u__animation--sixth {
+  animation: moveToRight 0.6s linear;
+  @include respond(phone-large) {
+    animation: none;
+  }
+}
+
+.u__animation--seventh {
+  animation: moveToRight 0.7s linear;
+  animation-fill-mode: forwards;
+}
+
+.u__animation--eighth {
+  animation: moveToRight 0.8s linear;
+}
+
+.u__animation--ninth {
+  animation: moveToRight 0.9s linear;
+  @include respond(phone-large) {
+    animation: none;
+  }
+}
+
+.u__animation--tenth {
+  animation: moveToRight 1s linear;
+  animation-fill-mode: forwards;
+}
+
+.u__animation--arrowDown {
+  animation: infiniteDown 1.5s linear;
+  animation-iteration-count: infinite;
+}
+
+.u__font-weight--400 {
+  font-weight: 400;
+}
+
+.u__font-weight--500 {
+  font-weight: 500;
+}
+
+.u__subheading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0.3rem;
+    width: 10rem;
+    background-color: $third-color;
+    margin-top: 1rem;
+  }
+}
+
+.u__subheading--left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+  @include respond(phone-large) {
+    align-items: center;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0.3rem;
+    width: 24rem;
+    background-color: $third-color;
+    margin-top: 1rem;
+  }
+}
+
+.u__highlight {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  z-index: 99;
+  color: $first-color;
+
+  &:active {
+    color: $first-color;
+  }
+
+  &:hover {
+    &::after {
+      padding-bottom: 2.5rem;
+      border-radius: 0px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $third-color;
+    bottom: 4px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    padding-bottom: 0.9rem;
+    // padding-bottom: 2.4rem;
+
+    transition: 0.2s all ease;
+
+    @include respond(phone-large) {
+      padding-bottom: 1rem;
+    }
+  }
+}

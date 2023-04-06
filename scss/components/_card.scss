@@ -1,0 +1,162 @@
+.card {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0rem 1rem 1rem 0.2rem $box-shadow-color;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: -0rem 2rem 1.5rem 1rem $box-shadow-color;
+    transform: translateY(-1rem);
+  }
+
+  &:hover .upper .upper__img {
+    filter: blur(0.1rem);
+  }
+
+  &:hover .upper .upper__img::after {
+    z-index: 1;
+  }
+
+  &:hover .upper .upper__bg {
+    opacity: 0.8;
+  }
+
+  &:hover .upper .upper__links {
+    display: flex;
+  }
+
+  .upper {
+    position: relative;
+    height: 18rem;
+    width: 100%;
+
+    @include respond(laptop-medium) {
+      height: 14rem;
+    }
+
+    @include respond(tablet) {
+      height: 25rem;
+    }
+
+    @include respond(phone-large) {
+      height: 30rem;
+    }
+
+    &__img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      transition: 0.6 filter;
+
+      &::after {
+        content: "asdf";
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        background-color: $second-color;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: inherit;
+      width: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      display: none;
+
+      @include respond(tablet) {
+        gap: 3rem;
+      }
+
+      &--item {
+        font-size: 2rem;
+        padding: 1.2rem;
+
+        @include respond(tablet) {
+          font-size: 2.6rem;
+        }
+
+        @include respond(phone-large) {
+          font-size: 3rem;
+          padding: 1.8rem;
+        }
+
+        ion-icon {
+          pointer-events: none;
+        }
+
+        &:link,
+        &:visited {
+          display: inline-block;
+          color: $lighter-color;
+          border: 1.6px solid $lighter-color;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.6 all;
+        }
+
+        &:hover,
+        &:active {
+          border: 1px solid $lighter-color;
+          background-color: $lighter-color;
+          color: $second-color;
+        }
+      }
+    }
+  }
+
+  &__text {
+    padding: 1rem 2rem 2rem 2rem;
+
+    &--name {
+      display: block;
+      font-weight: 700;
+      font-size: 1.8rem;
+
+      @include respond(laptop-medium) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(tablet) {
+        font-size: 2rem;
+      }
+
+      @include respond(phone-large) {
+        font-size: 2.2rem;
+      }
+    }
+
+    &--description {
+      font-size: 1.6rem;
+
+      @include respond(laptop-medium) {
+        font-size: 1.4rem;
+      }
+
+      @include respond(tablet) {
+        font-size: 1.8rem;
+      }
+
+      @include respond(phone-large) {
+        font-size: 2rem;
+      }
+    }
+  }
+}

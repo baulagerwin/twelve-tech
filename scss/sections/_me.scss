@@ -1,0 +1,44 @@
+.me {
+  padding: 8rem 0rem;
+  background-color: $lighter-color;
+
+  @include respond(tablet) {
+    padding: 6rem 0rem;
+  }
+
+  @include respond(phone-large) {
+    padding: 4rem 0rem;
+  }
+
+  .who {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0rem 4rem;
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      font-weight: 400;
+
+      &--intro {
+        font-size: 2.8rem;
+
+        @include respond(phone-large) {
+          font-size: 3rem;
+        }
+      }
+
+      &--first,
+      &--second,
+      &--third,
+      &--fourth {
+        font-size: 2rem;
+
+        @include respond(phone-large) {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}

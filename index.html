@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/12.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/index.css" />
+    <title>Twelve Technologies</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <a href="/" class="navbar__logo--desktop">Twelve Technologies</a>
+        <a href="/" class="navbar__logo--mobile">Twelve</a>
+        <div class="links">
+          <label for="toggle" class="links__hamburger">&#9776;</label>
+          <input type="checkbox" id="toggle" class="links__checkbox" />
+          <ul class="links__lists">
+            <li class="u__animation--fifth">
+              <a href="#about-me" class="links__lists--item">Who Am I</a>
+            </li>
+            <li class="u__animation--seventh">
+              <a href="#tech-skills" class="links__lists--item">Skills</a>
+            </li>
+            <li class="u__animation--eighth">
+              <a href="#latest-works" class="links__lists--item">Projects</a>
+            </li>
+            <li class="u__animation--tenth">
+              <a href="#connect" class="links__lists--item">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="intro">
+        <h1 class="intro__name">Gerwin Baula</h1>
+        <p class="intro__description">
+          Front End <span class="u__font-weight--400">Developer</span> from
+          Philippines
+        </p>
+        <ul class="links">
+          <li class="links__list">
+            <a
+              href="https://www.facebook.com/cfkyeahraze/"
+              target="_blank"
+              class="links__list--item"
+            >
+              <ion-icon
+                name="logo-facebook"
+                class="u__marginLeft--small u__marginRight--small"
+              ></ion-icon>
+            </a>
+          </li>
+          <li class="links__list">
+            <a
+              href="https://github.com/baulagerwin"
+              target="_blank"
+              class="links__list--item"
+            >
+              <ion-icon
+                name="logo-github"
+                class="u__marginLeft--small u__marginRight--small"
+              ></ion-icon>
+            </a>
+          </li>
+          <li class="links__list">
+            <a
+              href="https://twitter.com/baula_gerwin"
+              target="_blank"
+              class="links__list--item"
+            >
+              <ion-icon
+                name="logo-twitter"
+                class="u__marginLeft--small u__marginRight--small"
+              ></ion-icon>
+            </a>
+          </li>
+          <li class="links__list">
+            <a
+              href="https://www.instagram.com/cfkyeahraze/"
+              target="_blank"
+              class="links__list--item"
+            >
+              <ion-icon
+                name="logo-instagram"
+                class="u__marginLeft--small u__marginRight--small"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <div class="buttons">
+          <a href="#about-me" class="buttons__btn buttons__btn--boxed"
+            >Find out more</a
+          >
+          <a href="#latest-works" class="buttons__btn buttons__btn--unboxed"
+            >Latest works
+            <ion-icon
+              name="arrow-down"
+              class="u__animation--arrowDown"
+            ></ion-icon
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features grid grid-col-3">
+      <div class="feature">
+        <span class="feature__name">Passionate</span>
+        <p class="feature__description">
+          Possess an intense drive and enthusiasm that fuels their actions and
+          inspires those around them. A believer that the greatest works are
+          done by passionate people.
+        </p>
+      </div>
+      <div class="feature">
+        <span class="feature__name">Critical Thinker</span>
+        <p class="feature__description">
+          Creating a user-friendly and visually appealing website is a very
+          challenging task. It requires strong attention to detail which will
+          identify underlying issues or problems.
+        </p>
+      </div>
+      <div class="feature">
+        <span class="feature__name">Adaptable</span>
+        <p class="feature__description">
+          In a field of web development, almost everything changes drastically.
+          Every developer must have the ability to adapt to other tech stack as
+          well as the incoming ones.
+        </p>
+      </div>
+    </section>
+
+    <!-- Who Am I -->
+    <section class="me" id="about-me">
+      <h2 class="u__subheading">Who Am I</h2>
+      <div class="who grid grid-col-8">
+        <div class="who__description grid-col-span-6">
+          <h3 class="who__description--intro">Hello there.</h3>
+          <p class="who__description--first">
+            My name is <span class="u__font-weight--500">Gerwin</span> and I am
+            a
+            <a
+              target="_blank"
+              href="https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html"
+              class="u__highlight"
+              >front-end developer</a
+            >.
+          </p>
+          <p class="who__description--second">
+            I wrote my first code in 2014. I was a electrical engineering
+            freshman that time taking an introductory course on programming. I
+            actually didn't know that you could <s>solve puzzles</s>create
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Algorithm"
+              class="u__highlight"
+              >algorithms</a
+            >
+            by writing some weird syntax and have fun with it.
+          </p>
+          <p class="who__description--second">
+            That's when I realized that this is what I like to do. It's more
+            exciting to go to
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Computer_lab#:~:text=A%20computer%20lab%20is%20a,retain%20access%20to%20the%20computers."
+              class="u__highlight"
+              >computer laboratory</a
+            >
+            over electrical laboratory. But... yeah, it was kinda late. If only
+            programming was introduced to me when I was a high school, I would
+            definitely ditch an engineering degree and take a
+            <a
+              target="_blank"
+              href="https://www.mtu.edu/cs/what/#:~:text=Computer%20science%20is%20the%20study,software%20is%20developed%20and%20designed."
+              class="u__highlight"
+              >computer science</a
+            >
+            degree.
+          </p>
+          <p class="who__description--third">
+            With the help of internet and
+            <a
+              target="_blank"
+              href="https://en.wikipedia.org/wiki/Massive_open_online_course"
+              class="u__highlight"
+              >MOOC</a
+            >'s, I managed to reconnect to what I like. Nowadays, I tend to code
+            all of my projects from scratch and spend time taking my skill to
+            the next level in order to deliver unique experience to every
+            company.
+          </p>
+          <p class="who__description--fourth">
+            Outside programming I enjoy watching
+            <a
+              target="_blank"
+              href="https://fanlore.org/wiki/J-Drama"
+              class="u__highlight"
+              >jdorama</a
+            >, kdrama, documentaries and playing
+            <a
+              target="_blank"
+              href="https://www.dota2.com/home"
+              class="u__highlight"
+              >dota 2</a
+            >.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Skills -->
+    <section class="skills" id="tech-skills">
+      <h2 class="u__subheading">Technological Skills</h2>
+      <p class="skills__description">
+        I always enjoy learning new things. Especially the technologies that
+        make your company special.
+      </p>
+      <ul class="tech grid grid-col-4">
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/html5.jpg" alt="HTML5" />
+          </div>
+          <p class="tech__item--text">HTML5</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/css3.jpg" alt="CSS3" />
+          </div>
+          <p class="tech__item--text">CSS3</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/tailwindcss.png" alt="TailwindCSS" />
+          </div>
+          <p class="tech__item--text">Tailwind CSS</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/sass.png" alt="SASS" />
+          </div>
+          <p class="tech__item--text">SASS</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/js.png" alt="JavaScript" />
+          </div>
+          <p class="tech__item--text">JavaScript</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/ts.png" alt="TypeScript" />
+          </div>
+          <p class="tech__item--text">TypeScript</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/react.png" alt="React" />
+          </div>
+          <p class="tech__item--text">React</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/redux.png" alt="Redux" />
+          </div>
+          <p class="tech__item--text">Redux</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/react-query.svg" alt="Git" />
+          </div>
+          <p class="tech__item--text">React Query</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/git.png" alt="Git" />
+          </div>
+          <p class="tech__item--text">Git</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/nodejs.png" alt="Node JS" />
+          </div>
+          <p class="tech__item--text">Node JS</p>
+        </li>
+        <li class="tech__item">
+          <div class="tech__item--img">
+            <img src="./assets/mongodb.jpg" alt="Mongo DB" />
+          </div>
+          <p class="tech__item--text">Mongo DB</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="works" id="latest-works">
+      <h2 class="u__subheading">My latest works</h2>
+      <p class="works__description">These are my greatest works.</p>
+      <ul class="latest grid grid-col-4-of-works">
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img src="./assets/studieux.PNG" alt="Studieux" />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://studieux-web.netlify.app/"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Studieux</span>
+              <p class="card__text--description">
+                Study effectively by storing notes in a question and answer
+                format and review them anywhere anytime!
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img src="./assets/bill-calculator.PNG" alt="Bill Calculator" />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://github.com/baulagerwin/electricity-and-water-bill-calculator"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  href="https://bill-calcu.netlify.app"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Bill Calculator</span>
+              <p class="card__text--description">
+                Calculate your monthly electricity and water bills online. Enter
+                usage data and get an estimate instantly.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img
+                  src="./assets/book-library-manager.PNG"
+                  alt="Book Manager"
+                />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://github.com/baulagerwin/javascript"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  href="https://project-2wo.netlify.app/"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Book Manager</span>
+              <p class="card__text--description">
+                Manage your book collection online! Add, update, and delete
+                books with ease. Keep track of your reading list.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img src="./assets/grocery-list.PNG" alt="Grocery List" />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://github.com/baulagerwin/javascript"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  href="https://project-1ne.netlify.app/"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Grocery List</span>
+              <p class="card__text--description">
+                Keep track of all the items you need to purchase on your trip to
+                the store. Let's make your shopping experience better.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img src="./assets/manage.PNG" alt="Manage" />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://github.com/baulagerwin/manage"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  href="https://man-age.netlify.app/"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Manage</span>
+              <p class="card__text--description">
+                Manage makes it simple for software teams to plan day-to-day
+                task while keeping the larger team goals in view.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img src="./assets/perses.png" alt="Perses" />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://github.com/baulagerwin/perses"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  href="https://perses.netlify.app/"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Perses</span>
+              <p class="card__text--description">
+                We build websites that resonate with your brand, look good to
+                users, and work well for search engines.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img src="./assets/pastoral-farm.png" alt="Pastoral Farm" />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://github.com/baulagerwin/pastoral-farm"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  href="https://pastoral-farm.netlify.app/"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Pastoral Farm</span>
+              <p class="card__text--description">
+                Order fruits and vegetables that are affordable, seasonal, and
+                as fresh and local as possible in one click.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="latest__item">
+          <div class="card">
+            <div class="upper">
+              <div class="upper__img">
+                <img src="./assets/omnifood.PNG" alt="Omnifood" />
+              </div>
+              <div class="upper__links">
+                <a
+                  href="https://github.com/baulagerwin/html-and-css"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+                <a
+                  href="https://fnl-project.netlify.app/"
+                  target="_blank"
+                  class="upper__links--item"
+                  ><ion-icon name="open-outline"></ion-icon
+                ></a>
+              </div>
+            </div>
+            <div class="card__text">
+              <span class="card__text--name">Omnifood</span>
+              <p class="card__text--description">
+                A healthy meal delivered to your door, tailored to your personal
+                taste and nutritional needs, every single day.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="cta grid grid-col-2" id="connect">
+      <div class="first-col">
+        <h2 class="u__subheading--left">Get in Touch</h2>
+        <p class="first-col__description">
+          Want to connect? I share my passion for development anywhere I can.
+        </p>
+      </div>
+      <div class="second-col">
+        <ul class="second-col__list">
+          <li>
+            <a
+              href="https://www.facebook.com/cfkyeahraze/"
+              target="_blank"
+              class="second-col__list--item"
+              ><ion-icon
+                name="logo-facebook"
+                class="second-col__list--icon"
+              ></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/baulagerwin"
+              target="_blank"
+              class="second-col__list--item"
+            >
+              <ion-icon
+                name="logo-github"
+                class="second-col__list--icon"
+              ></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/baula_gerwin"
+              target="_blank"
+              class="second-col__list--item"
+            >
+              <ion-icon
+                name="logo-twitter"
+                class="second-col__list--icon"
+              ></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/cfkyeahraze/"
+              target="_blank"
+              class="second-col__list--item"
+            >
+              <ion-icon
+                name="logo-instagram"
+                class="second-col__list--icon"
+              ></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <footer></footer> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
