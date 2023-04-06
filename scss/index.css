@@ -747,7 +747,7 @@ nav .navbar .links__lists--item:hover, nav .navbar .links__lists--item:active {
 }
 .features .feature__name {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media (max-width: 48em) {
   .features .feature__name {
