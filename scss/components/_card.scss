@@ -40,7 +40,11 @@
     }
 
     @include respond(phone-large) {
-      height: 30rem;
+      height: 31.25rem;
+    }
+
+    @include respond(phone-medium) {
+      height: 28.125rem;
     }
 
     &__img {

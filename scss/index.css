@@ -498,7 +498,12 @@ body {
 }
 @media (max-width: 34.37em) {
   .card .upper {
-    height: 30rem;
+    height: 31.25rem;
+  }
+}
+@media (max-width: 23.4375em) {
+  .card .upper {
+    height: 28.125rem;
   }
 }
 .card .upper__img {
