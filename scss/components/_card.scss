@@ -4,6 +4,7 @@
   box-shadow: 0rem 1rem 1rem 0.2rem $box-shadow-color;
   cursor: pointer;
   transition: all 0.2s ease;
+  background-color: white;
 
   &:hover {
     box-shadow: -0rem 2rem 1.5rem 1rem $box-shadow-color;
@@ -30,6 +31,7 @@
     position: relative;
     height: 18rem;
     width: 100%;
+    border-bottom: 1px solid $light-color;
 
     @include respond(laptop-medium) {
       height: 14rem;
@@ -126,8 +128,83 @@
     }
   }
 
+  &__badges {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    @include respond(tablet) {
+      font-size: 1.6rem;
+    }
+
+    &--html5 {
+      color: white;
+      background-color: #f16528;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--css3 {
+      color: white;
+      background-color: #2864f1;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--sass {
+      color: white;
+      background-color: #cd679a;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--tailwindcss {
+      color: white;
+      background-color: #38bdf8;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--javascript {
+      color: black;
+      background-color: #f0db4f;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--typescript {
+      color: white;
+      background-color: #3178c6;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--react {
+      color: white;
+      background-color: #149eca;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--node {
+      color: white;
+      background-color: #333333;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--mongodb {
+      color: white;
+      background-color: #409b39;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+  }
+
   &__text {
     padding: 1rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 
     &--name {
       display: block;
@@ -149,6 +226,7 @@
 
     &--description {
       font-size: 1.6rem;
+      font-weight: 500;
 
       @include respond(laptop-medium) {
         font-size: 1.4rem;
