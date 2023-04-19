@@ -41,15 +41,14 @@
 
 .grid-col-4-of-works {
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 3rem;
 
   @include respond(laptop-medium) {
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @include respond(tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
   }
 
   @include respond(phone-large) {
@@ -76,3 +75,8 @@
     grid-column: 1 / -1;
   }
 }
+
+/**
+
+I have a website that uses the movie db api and this website shows the trending movies and tv shows. Give me a content describing my website in 
+**/

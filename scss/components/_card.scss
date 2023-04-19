@@ -34,7 +34,7 @@
     border-bottom: 1px solid $light-color;
 
     @include respond(laptop-medium) {
-      height: 14rem;
+      height: 32rem;
     }
 
     @include respond(tablet) {
@@ -132,6 +132,10 @@
     font-size: 1.2rem;
     font-weight: 600;
 
+    @include respond(laptop-medium) {
+      font-size: 1.8rem;
+    }
+
     @include respond(tablet) {
       font-size: 1.6rem;
     }
@@ -160,6 +164,20 @@
     &--tailwindcss {
       color: white;
       background-color: #38bdf8;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--tmdb {
+      color: white;
+      background-color: #27bad2;
+      padding: 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    &--react-query {
+      color: white;
+      background-color: #ff4154;
       padding: 0.3rem;
       border-radius: 0.2rem;
     }
@@ -212,7 +230,7 @@
       font-size: 1.8rem;
 
       @include respond(laptop-medium) {
-        font-size: 1.6rem;
+        font-size: 2.4rem;
       }
 
       @include respond(tablet) {
@@ -229,7 +247,7 @@
       font-weight: 500;
 
       @include respond(laptop-medium) {
-        font-size: 1.4rem;
+        font-size: 2rem;
       }
 
       @include respond(tablet) {

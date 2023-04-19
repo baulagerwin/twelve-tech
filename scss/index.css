@@ -310,17 +310,16 @@ body {
 
 .grid-col-4-of-works {
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 3rem;
 }
 @media (max-width: 75em) {
   .grid-col-4-of-works {
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 48em) {
   .grid-col-4-of-works {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
   }
 }
 @media (max-width: 34.37em) {
@@ -352,6 +351,10 @@ body {
   }
 }
 
+/**
+
+I have a website that uses the movie db api and this website shows the trending movies and tv shows. Give me a content describing my website in 
+**/
 .header {
   background-image: linear-gradient(rgba(60, 66, 69, 0.6), rgba(60, 66, 69, 0.6)), url(../assets/hero.jpeg);
   height: 65vh;
@@ -490,7 +493,7 @@ body {
 }
 @media (max-width: 75em) {
   .card .upper {
-    height: 14rem;
+    height: 32rem;
   }
 }
 @media (max-width: 48em) {
@@ -583,6 +586,11 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
 }
+@media (max-width: 75em) {
+  .card__badges {
+    font-size: 1.8rem;
+  }
+}
 @media (max-width: 48em) {
   .card__badges {
     font-size: 1.6rem;
@@ -609,6 +617,18 @@ body {
 .card__badges--tailwindcss {
   color: white;
   background-color: #38bdf8;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+.card__badges--tmdb {
+  color: white;
+  background-color: #27bad2;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+.card__badges--react-query {
+  color: white;
+  background-color: #ff4154;
   padding: 0.3rem;
   border-radius: 0.2rem;
 }
@@ -655,7 +675,7 @@ body {
 }
 @media (max-width: 75em) {
   .card__text--name {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 48em) {
@@ -674,7 +694,7 @@ body {
 }
 @media (max-width: 75em) {
   .card__text--description {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 48em) {
