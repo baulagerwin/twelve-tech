@@ -1,12 +1,17 @@
-
 # Twelve Technologies
 
 My Portfolio.
+
+## Preview
+
+![Twelve Technologies](twelve-technologies.PNG)
+
 ## Requirements
 
 Install the following requirements first before proceeding.
 
 - [Git](https://git-scm.com/) - Version Control System
+
 ## Installation
 
 Follow these instructions to run this project on your local machine for development and testing purposes.
@@ -22,9 +27,12 @@ Follow these instructions to run this project on your local machine for developm
 3. Double click index.html
 
 4. Explore and enjoy.
+
 ## Built With
--   HyperText Markup Language (HTML)
--   Syntactically Awesome Stylesheet (SASS)
+
+- HyperText Markup Language (HTML)
+- Syntactically Awesome Stylesheet (SASS)
+
 ## Acknowledgements
 
- - [Heroicons](https://heroicons.com/) - Icons
+- [Heroicons](https://heroicons.com/) - Icons
